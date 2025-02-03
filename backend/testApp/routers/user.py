@@ -1,12 +1,12 @@
 # импорты TaskRepo и фастапи роутеров
 from testapp.dependencies import user_service
-from testApp.schemas.user.user import UserCreation,UserResponse
-from testApp.services.user import UserService
+from schemas.user.user import UserCreation,UserResponse
+from services.user import UserService
 from typing import Annotated,List
 from fastapi import Depends,APIRouter
-from testApp.db.db import db_helper
+from db.db import db_helper
 from sqlalchemy.ext.asyncio import AsyncSession
-from testApp.routers.login import check_jwt
+from routers.login import check_jwt
 router = APIRouter(tags=['user_crud'],prefix='/user')
 
 @router.post("/user_create")

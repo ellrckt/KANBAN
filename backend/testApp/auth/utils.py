@@ -1,5 +1,5 @@
 import jwt
-from testApp.config import settings
+from config import settings
 import bcrypt
 from datetime import timedelta, datetime
 

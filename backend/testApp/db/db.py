@@ -14,7 +14,7 @@ import os
 root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_path)
 
-from testApp.config import db
+from config import db
 
 
 class DatabaseHelper:

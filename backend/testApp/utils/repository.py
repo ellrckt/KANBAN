@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
-from testApp.db.db import db_helper
+from db.db import db_helper
 from sqlalchemy import select,insert
 from fastapi import Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from fastapi import HTTPException
-from testApp.auth.utils import hash_password,validate_password,encode_jwt
+from auth.utils import hash_password,validate_password,encode_jwt
 
 
 

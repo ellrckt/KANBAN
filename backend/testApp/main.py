@@ -4,9 +4,9 @@ from db.db import db_helper
 from contextlib import asynccontextmanager
 from fastapi.responses import ORJSONResponse
 import bcrypt
-from testApp.routers.user import router as user_router
-from testApp.routers.user_registration import router as user_registration_router
-from testApp.routers.login import router as login_router
+from routers.user import router as user_router
+from routers.user_registration import router as user_registration_router
+from routers.login import router as login_router
 
 
 

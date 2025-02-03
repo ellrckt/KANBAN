@@ -1,7 +1,7 @@
-from testApp.utils.repository import AbstractRepository
-from testApp.models.user import User
+from utils.repository import AbstractRepository
+from models.user import User
 from sqlalchemy.ext.asyncio import AsyncSession
-from testApp.schemas.user.user import UserRegistration,UserLogin
+from schemas.user.user import UserRegistration,UserLogin
 class UserService:
 
     def __init__(self, user_repo: AbstractRepository):

@@ -1,10 +1,10 @@
 from fastapi import APIRouter,Depends
-from testApp.schemas.user.user import UserRegistration
+from schemas.user.user import UserRegistration
 from sqlalchemy.ext.asyncio import AsyncSession
-from testApp.db.db import db_helper
-from testApp.services.user import UserService
-from testApp.testapp.dependencies import user_service
-from testApp.schemas.user.user import UserResponse
+from db.db import db_helper
+from services.user import UserService
+from testapp.dependencies import user_service
+from schemas.user.user import UserResponse
 from typing import Annotated
 
 router = APIRouter(tags=["registration"],prefix="/registration")
