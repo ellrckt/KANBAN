@@ -2,6 +2,7 @@ from models.base import Base
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.types import String, Boolean
 
+
 class User(Base):
 
     __table_args__ = {"extend_existing": True}

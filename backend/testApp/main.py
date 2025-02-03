@@ -9,7 +9,6 @@ from routers.user_registration import router as user_registration_router
 from routers.login import router as login_router
 
 
-
 # @asynccontextmanager
 # async def lifespan(application: FastAPI):
 
@@ -21,12 +20,13 @@ from routers.login import router as login_router
 app = FastAPI(
     # lifespan=lifespan,
     default_response_class=ORJSONResponse,
-    )
+)
 
 app.include_router(user_router)
 app.include_router(user_registration_router)
 app.include_router(login_router)
 
+
 @app.get("/get_users/")
 def get_users():
-    print("hello world")    
+    print("hello world")
